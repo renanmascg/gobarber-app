@@ -1,7 +1,7 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es6": true
   },
   "extends": [
     "plugin:react/recommended",
@@ -24,6 +24,8 @@
     "prettier"
   ],
   "rules": {
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [

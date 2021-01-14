@@ -16,7 +16,7 @@ export const Container = styled.div`
 
   input {
     flex: 1;
-    background:transparent;  
+    background: transparent;
     border: 0;
     color: #f4ede8;
 
@@ -28,7 +28,4 @@ export const Container = styled.div`
   svg {
     margin-right: 16px;
   }
-
-
-
 `;
