@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import logoImg from '../../assets/logo.svg';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
-import getValidationError from '../../utils/getValidationErrors';
+import getValidationErrors from '../../utils/getValidationErrors';
 import { Background, Container, Content } from './SignUpComponents';
 
 const SignUp: React.FC = () => {
@@ -28,7 +28,7 @@ const SignUp: React.FC = () => {
         abortEarly: false, // retorna todos os erros, e não o primeiro que encontrou
       });
     } catch (err) {
-      const errors = getValidationError(err);
+      const errors = getValidationErrors(err);
 
       formRef.current?.setErrors(errors);
     }
